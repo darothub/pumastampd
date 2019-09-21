@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f2fcf2;
+    font-family: 'Oswald', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width:1800px;
+    max-height: 1230px;
+    margin: 100px auto;
+}
+.card{
+    max-width: 1169px;
+    max-height: 828px;
+    background-color: aliceblue;
+    /* background-color: bisque; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-columns: repeat(2, 1fr);
+    box-shadow: #000 6px 0px 25px;
+}
+.shoe-display{
+    width: 359px;
+    height: 824px;
+    background-image: linear-gradient(135deg, rgba(164, 237, 255), rgba(152, 172, 225), rgba(127,32,162));
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px));
+    padding: 30px;
+}
+#shoe{
+    max-width: 323px;
+    max-height: 384px;
+    margin-top: -90px;
+    margin-left: -80px;
+    
+}
+#pumalogo{
+    widows: 80px;
+    height: 62px;
+    margin: 80px auto;
+}
+.scroll{
+    width: 91px;
+    height: 17px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.dot{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.dot:nth-child(1){
+    background-color:#fff;
+}
+.top-header{
+    max-width: 686px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) */
+}
+.stars{
+    display: inline-block;
+  
+    margin-top: 70px;
+}
+h1{
+ 
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#black{
+    color: grey;
+    font-style: italic;
+    margin-top: -35px;
+}
+
+.price{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -35px;
+    color: red;
+}
+.price p:nth-child(1){
+    text-decoration: line-through;
+    color: #000;
+}
+.description{
+    margin-top: 20px;
+}
+.description-text{
+    max-width: 686px;
+    text-align: justify
+}
+.description-text h3{
+    letter-spacing: 1px;
+}
+.description-text p{
+    font-size: 16px;
+    font-weight: normal;
+}
+.description-csq{
+    max-width: 686px;
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    margin-top: 50px;
+}
+.description-csq div{
+    width: 130px;
+    border-right: 2px solid lightgrey;
+    
+}
+.description-csq div p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.description-csq div:nth-child(2), .description-csq div:nth-child(3){
+    text-align: center;
+    
+}
+
+.btn-share{
+    max-width: 686px;
+    margin-top: 80px;
+    display: flex;
+}
+.btn-wrapper{
+    flex: 2
+}
+.btn{
+    width: 272px;
+    height: 65px;
+    background-color: #ff9a70;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    box-shadow: #000 6px 0px 25px
+    
+}
+.share{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-header{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
