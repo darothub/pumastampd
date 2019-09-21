@@ -9,20 +9,22 @@ body{
     box-sizing: border-box;
 }
 .container{
-    max-width:1800px;
-    max-height: 1230px;
+    max-width:1600px;
+    max-height: 1030px;
     margin: 100px auto;
 }
 .card{
     max-width: 1169px;
     max-height: 828px;
-    background-color: aliceblue;
+    background-color: white;
     /* background-color: bisque; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-columns: repeat(2, 1fr);
     box-shadow: #000 6px 0px 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .shoe-display{
     width: 359px;
@@ -76,8 +78,11 @@ body{
 }
 .stars{
     display: inline-block;
-  
+    color: red;
     margin-top: 70px;
+}
+.star{
+    background-clip: text;
 }
 h1{
  
@@ -152,17 +157,21 @@ p{
 .btn{
     width: 272px;
     height: 65px;
-    background-color: #ff9a70;
+    background-image: linear-gradient(to bottom, #ff9a70, #ff5148);
     border-radius: 10px;
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
     color: white;
-    box-shadow: #000 6px 0px 25px
+    box-shadow: #ff9a70 6px 0px 25px;
+    border: none;
     
 }
 .share{
     font-size: 35px;
     margin-top: 10px;
+}
+select{
+    border: none;
 }
 
 @media only screen and (max-width: 600px) {
