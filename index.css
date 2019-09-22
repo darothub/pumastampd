@@ -163,6 +163,9 @@ p{
     border-right: 2px solid lightgrey;
     
 }
+.description-csq div:nth-child(3){
+    border: none;
+}
 .description-csq div p{
     font-size: 20px;
     text-transform: uppercase;
@@ -208,6 +211,7 @@ p{
     color: grey;
 }
 select{
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     height: 30px;
     font-size: 16px;
