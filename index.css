@@ -92,7 +92,7 @@ body{
     flex-direction: row;
     /* background-color: blue; */
     
-    margin-top: 20px;
+    margin-top: 50px;
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) */
 }
